@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Books Search</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form class = "d-flex" method="post" action="{% url 'books:searchresult' %}" >
+            {%csrf_token %}
+            <input class="form-control me-2" type="search" placeholder="Search" name="searched" >
+            <button class="btn btn-outline-secondary" type="submit">Search</button>
+        </form>
+      
+
+
+
+    </body>
+</html>
